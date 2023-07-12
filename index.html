@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+
+    <div ng-controller="userController">
+        <div ng-if="!toggle" id="demo">
+  
+          <form>
+              <h2 id="demo4">Restraunt Login</h2>
+              <h6 id="demo5"> * Healthy Panda *</h6>
+              <br><br>
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              ng-model="$parent.username"
+            /><br /><br />
+            <p>{{username}}</p>
+            <label for="useremail">Useremail:</label>
+            <input
+              type="email"
+              name="useremail"
+              id="useremail"
+              ng-model="$parent.useremail"
+            /><br /><br />
+            <p>{{useremail}}</p>
+            <p>
+              <label for="userpassword">Password:</label>
+              <input type="password" name="userpassword" id="userpassword" ng-model="$parent.userpassword"
+              /><br /><br />
+            </p>
+  
+            <p>{{userpassword}}</p>
+            <button ng-click="signUp()">Register</button>
+          </form>
+          <br>
+          <button ng-click="changeView()" id="demo3">SignIn</button>
+        </div>
+     <div ng-if="!toggle" id="demo1">
+            <form>
+                <h2 id="demo4">Restraunt Login</h2>
+            <h6 id="demo5"> * Healthy Panda *</h6>
+            <br>
+            <label for="useremail">Useremail:</label>
+            <input type="email" name="useremail" id="useremail"><br><br>
+            <label for="userpassword">Password:</label>
+            <input type="password" name="userpassword" id="userpassword"><br><br>
+            <button ng-click="signIn()">Login</button>
+            
+        
+            </form>
+            <br>
+            <button ng-click="changeView()" id="demo2">singnUp</button>
+
+        </div>
+    </div>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div ng-view>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+    <script src="script.js"></script>
+    <script src="service.js"></script>
+</body>
+
+</html>
